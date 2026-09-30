@@ -1,0 +1,22 @@
+{
+  "name": "medcore-hms",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MedCore HMS — multi-tenant hospital management platform",
+  "scripts": {
+    "dev": "pnpm --filter api --filter web --parallel dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm --filter types build && pnpm --filter api build && pnpm --filter web build",
+    "lint": "pnpm -r lint",
+    "db:up": "docker compose up -d postgres redis",
+    "db:down": "docker compose down",
+    "db:migrate": "pnpm --filter api prisma:migrate",
+    "db:seed": "pnpm --filter api prisma:seed",
+    "db:studio": "pnpm --filter api prisma:studio"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
