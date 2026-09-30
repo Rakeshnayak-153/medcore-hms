@@ -8,7 +8,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { PaymentMethod, Role } from '@prisma/client';
+import { PaymentMethod, Role } from '../generated/prisma/client';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { AuthUser } from '../common/auth-user';
 import { Roles } from '../common/roles.decorator';
@@ -71,3 +71,4 @@ export class BillingController {
     return this.billing.notifications(req.user);
   }
 }
+

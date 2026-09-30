@@ -7,3 +7,4 @@ import { CatalogService } from './catalog.service';
   providers: [CatalogService],
 })
 export class CatalogModule {}
+

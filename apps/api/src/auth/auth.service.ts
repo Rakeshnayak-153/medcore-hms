@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
-import { Role } from '@prisma/client';
+import { Role } from '../generated/prisma/client';
 import * as bcrypt from 'bcrypt';
 import { randomInt, randomUUID } from 'crypto';
 import type { AuthUser } from '../common/auth-user';
@@ -261,3 +261,4 @@ export class AuthService {
     };
   }
 }
+

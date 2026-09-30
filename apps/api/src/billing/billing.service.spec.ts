@@ -112,3 +112,4 @@ describe('BillingService', () => {
     expect(updateInvoice).not.toHaveBeenCalled();
   });
 });
+

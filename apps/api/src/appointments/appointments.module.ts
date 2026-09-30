@@ -7,3 +7,4 @@ import { AppointmentsService } from './appointments.service';
   providers: [AppointmentsService],
 })
 export class AppointmentsModule {}
+

@@ -224,3 +224,4 @@ describe('ClinicalService', () => {
     expect(updateItem).not.toHaveBeenCalled();
   });
 });
+

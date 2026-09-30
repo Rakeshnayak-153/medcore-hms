@@ -51,3 +51,4 @@ export class CatalogController {
     return this.catalog.search(req.user, q ?? '');
   }
 }
+

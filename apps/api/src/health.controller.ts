@@ -7,3 +7,4 @@ export class HealthController {
     return { ok: true, service: 'medcore-api', time: new Date().toISOString() };
   }
 }
+

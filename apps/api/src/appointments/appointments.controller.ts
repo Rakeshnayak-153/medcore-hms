@@ -10,7 +10,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { AppointmentStatus, Role } from '@prisma/client';
+import { AppointmentStatus, Role } from '../generated/prisma/client';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { AuthUser } from '../common/auth-user';
 import { Roles } from '../common/roles.decorator';
@@ -70,3 +70,4 @@ export class AppointmentsController {
     return this.appointments.updateStatus(id, body.status, req.user);
   }
 }
+

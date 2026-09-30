@@ -15,6 +15,7 @@ export class PrismaService extends PrismaClient {
 
     const adapter = new PrismaPg({ connectionString });
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     super({ adapter });
   }
 }

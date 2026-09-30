@@ -9,7 +9,7 @@ import {
   PaymentMethod,
   PaymentStatus,
   Prisma,
-} from '@prisma/client';
+} from '../generated/prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
 import { AuthUser } from '../common/auth-user';
 
@@ -224,3 +224,4 @@ export class BillingService {
     });
   }
 }
+

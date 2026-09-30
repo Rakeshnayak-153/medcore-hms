@@ -4,7 +4,7 @@ import {
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
-import { LabOrderStatus } from '@prisma/client';
+import { LabOrderStatus } from '../generated/prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
 import { AuthUser } from '../common/auth-user';
 
@@ -326,3 +326,4 @@ export class ClinicalService {
     });
   }
 }
+
